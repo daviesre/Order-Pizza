@@ -10,18 +10,27 @@
   </head>
   <body>
     <div class="container">
+      <div class="row">
+        div c
+      </div>
+      <!-- jumbotron -->
       <div class="jumbotron">
         <h1>Welcome to Pizza Land!</h1>
       </div>
+      <!-- select pizza size -->
+      <div class="">
 
+      </div>
       <form id="pizza-form">
         <label class="move-label">Select a size:</label>
         <select class="form-control" id="pizza-size">
           <option>Small</option>
           <option>Medium</option>
           <option>Large</option>
+          <option>Extra Large</option>
         </select>
 
+        <!-- select pizza toppings -->
         <label class="move-label">Select up to 3 toppings:</label>
         <select class="form-control" id="pizza-toppings1">
           <option>Cheese</option>
@@ -59,13 +68,16 @@
           <option>Anchovies</option>
         </select>
 
-        <button type="submit" class="btn btn-warning" id= "submit-button">Submit</button>
+        <!-- submit button -->
+        <button type="submit" class="btn btn-warning btn-lg" id= "submit-button">Submit</button>
       </form>
       <div>
+        <!-- total cost of pizza display -->
         <h4 id="totalCost"></h4>
       </div>
       <div id="pizza-image">
-        <img src="img/pizza.jpg" alt="a gif of a pizza" />
+        <!-- image of pizza -->
+        <img src="img/pizza2.jpg" alt="a gif of a pizza" />
       </div>
     </div>
   </body>

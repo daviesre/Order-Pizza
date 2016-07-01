@@ -1,10 +1,11 @@
 body {
-  background-image: url("http://www.transparenttextures.com/patterns/food.png")
+  background-image: url("http://www.transparenttextures.com/patterns/food.png");
 
 }
 
 .jumbotron {
-  background-image: url("http://www.hotspotpizzeria.com/resources/css/background-image.jpg")
+  background-image: url("http://www.hotspotpizzeria.com/resources/css/background-image.jpg");
+  margin-top:50px;
 
 }
 

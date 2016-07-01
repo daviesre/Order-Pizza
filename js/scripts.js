@@ -8,7 +8,9 @@ function Pizza (toppings1, toppings2, toppings3, size) {
 var pizzaCost = 0;
 
 Pizza.prototype.pizzaPrice = function(price) {
-  if (this.pizzaSize === "Large") {
+  if (this.pizzaSize === "Extra Large") {
+    pizzaCost +=24
+  } else if (this.pizzaSize === "Large") {
     pizzaCost += 20;
   } else if (this.pizzaSize === "Medium") {
     pizzaCost += 16;
@@ -36,7 +38,7 @@ $(document).ready(function(){
     var topping3 = $("#pizza-toppings3").val();
     var newPizza = new Pizza (topping1, topping2, topping3, smallMediumLarge);
     newPizza.pizzaPrice();
-    $("#totalCost").text("Your Order: One " + smallMediumLarge.toLowerCase() + " pizza totals to $" +  pizzaCost);
+    $("#totalCost").text("Your Order: One " + smallMediumLarge.toLowerCase() + " pizza with selected toppings totals to $" +  pizzaCost + ".00");
     pizzaCost = 0;
     $("#pizza-image").show();
   });
