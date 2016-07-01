@@ -6,9 +6,33 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Pizza Selection</title>
+    <title>Order Pizza</title>
   </head>
   <body>
-  
+    <h3>Order Pizza Here!</h3>
+    <div class="container">
+      <label>Select a size:</label>
+      <form id="pizza-size">
+        <select class="form-control">
+          <option>Small</option>
+          <option>Medium</option>
+          <option>Large</option>
+        </select>
+      </form>
+
+      <label>Select a topping:</label>
+      <form id="pizza-toppings">
+        <select class="form-control">
+          <option>Pepperoni</option>
+          <option>Mushrooms</option>
+          <option>Pineapple</option>
+          <option>Olives</option>
+          <option>Bacon</option>
+          <option>Anchovies</option>
+        </select>
+      </form>
+      <button type="submit" class="btn btn-primary" id= "submit-button">Submit</button>
+    </div>
+
   </body>
 </html>
