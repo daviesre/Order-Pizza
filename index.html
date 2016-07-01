@@ -49,6 +49,12 @@
         <div class="col-md-10">
           <form id="pizza-form">
             <label class="move-label">Select a size:</label>
+            <ul class ="info-move">
+              <li>Small: $12.00</li>
+              <li>Medium: $16.00</li>
+              <li>Large: $20.00</li>
+              <li>Extra Large: $24.00</li>
+            </ul>
             <select class="form-control" id="pizza-size">
               <option>Small</option>
               <option>Medium</option>
@@ -58,8 +64,12 @@
 
             <!-- select pizza toppings -->
             <label class="move-label">Select up to 3 toppings:</label>
+            <ul class ="info-move">
+              <li>Additional $1.00 per topping</li>
+              <li>Select no toppings for a plain cheese pizza at no additional charge!</li>
+            </ul>
             <select class="form-control" id="pizza-toppings1">
-              <option>Cheese</option>
+              <option>None</option>
               <option>Extra Cheese</option>
               <option>Pepperoni</option>
               <option>Bacon</option>
@@ -95,18 +105,20 @@
             </select>
 
             <!-- submit button -->
-            <button type="submit" class="btn btn-warning btn-lg" id= "submit-button">ORDER NOW!</button>
+            <button type="submit" class="btn btn-danger btn-lg" id= "submit-button">ORDER NOW!</button>
+
           </form>
         </div>
       </div>
 
+      <!-- total cost of pizza display -->
       <div>
-        <!-- total cost of pizza display -->
         <h4 id="totalCost"></h4>
       </div>
+
+      <!-- image of pizza -->
       <div id="pizza-image">
-        <!-- image of pizza -->
-        <img src="img/pizza2.jpg" alt="a gif of a pizza" />
+        <img src="img/pizza.jpg" alt="a gif of a pizza" />
       </div>
 
     </div>

@@ -19,7 +19,7 @@ Pizza.prototype.pizzaPrice = function(price) {
   } else {
     pizzaCost = 0;
   }
-    if(this.toppings1 !== "Cheese") {
+    if(this.toppings1 !== "None") {
      pizzaCost += 1;
      }if(this.toppings2 !== "None") {
       pizzaCost += 1;
