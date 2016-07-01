@@ -1,30 +1,35 @@
 body {
   background-image: url("http://www.transparenttextures.com/patterns/food.png");
-
 }
 
 .jumbotron {
   background-image: url("http://www.hotspotpizzeria.com/resources/css/background-image.jpg");
-  margin-top:50px;
+  margin-top:30px;
   text-align: center;
+  font-family:"Helvetica";
+  padding: 5px;
 }
 
 h1, #totalCost {
-  text-align: center;
   font-family:fantasy;
-}
-.carousel-inner {
   text-align:center;
+}
+
+.carousel-inner {
   width:1140px;
   height:360px;
 }
+
 .move-label {
   margin-top:20px;
+  margin-left:100px;
   font-family:"Helvetica";
 }
 
 #pizza-size, #pizza-toppings1, #pizza-toppings2, #pizza-toppings3 {
   margin-top: 8px;
+  margin-left:100px;
+
 }
 
 #pizza-image {
@@ -33,5 +38,6 @@ h1, #totalCost {
 }
 
 #submit-button {
-  margin-top:10px;
+  margin-top:40px;
+  margin-left:500px;
 }
