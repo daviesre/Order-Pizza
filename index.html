@@ -9,25 +9,29 @@
     <title>Order Pizza</title>
   </head>
   <body>
-    <h3>Order Pizza Here!</h3>
     <div class="container">
+      <div class="jumbotron">
+        <h1>Welcome to Pizza Land!</h1>
+      </div>
 
       <form id="pizza-form">
-        <label>Select a size:</label>
+        <label class="move-label">Select a size:</label>
         <select class="form-control" id="pizza-size">
           <option>Small</option>
           <option>Medium</option>
           <option>Large</option>
         </select>
 
-        <label>Select up to 3 toppings:</label>
+        <label class="move-label">Select up to 3 toppings:</label>
         <select class="form-control" id="pizza-toppings1">
           <option>Cheese</option>
+          <option>Extra Cheese</option>
           <option>Pepperoni</option>
+          <option>Bacon</option>
+          <option>Ham</option>
           <option>Mushrooms</option>
           <option>Pineapple</option>
           <option>Olives</option>
-          <option>Bacon</option>
           <option>Anchovies</option>
         </select>
 
@@ -35,10 +39,11 @@
           <option>None</option>
           <option>Extra Cheese</option>
           <option>Pepperoni</option>
+          <option>Bacon</option>
+          <option>Ham</option>
           <option>Mushrooms</option>
           <option>Pineapple</option>
           <option>Olives</option>
-          <option>Bacon</option>
           <option>Anchovies</option>
         </select>
 
@@ -46,14 +51,15 @@
           <option>None</option>
           <option>Extra Cheese</option>
           <option>Pepperoni</option>
+          <option>Bacon</option>
+          <option>Ham</option>
           <option>Mushrooms</option>
           <option>Pineapple</option>
           <option>Olives</option>
-          <option>Bacon</option>
           <option>Anchovies</option>
         </select>
 
-        <button type="submit" class="btn btn-primary" id= "submit-button">Submit</button>
+        <button type="submit" class="btn btn-warning" id= "submit-button">Submit</button>
       </form>
       <div>
         <h4 id="totalCost"></h4>

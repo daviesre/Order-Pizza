@@ -1,5 +1,21 @@
-h3 {
+body {
+  background-image: url("http://www.transparenttextures.com/patterns/food.png")
+}
+
+.jumbotron {
+  background-image: url("http://www.hotspotpizzeria.com/resources/css/background-image.jpg")
+}
+
+h1 {
   text-align: center;
+}
+
+.move-label {
+  margin-top:20px;
+}
+
+#pizza-size, #pizza-toppings1, #pizza-toppings2, #pizza-toppings3 {
+  margin-top: 8px;
 }
 
 #submit-button {
