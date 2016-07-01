@@ -3,14 +3,18 @@ function Pizza (toppings, size) {
   this.toppings = toppings;
   this.pizzaSize = size;
 }
+var pizzaCost = 0;
 
 Pizza.prototype.pizzaPrice = function(price) {
   if (this.pizzaSize === "Large") {
-    console.log(22)
+    pizzaCost += 20;
+    console.log(pizzaCost)
   } else if (this.pizzaSize === "Medium") {
-    console.log(16);
+    pizzaCost += 15;
+    console.log(pizzaCost);
   } else if (this.pizzaSize === "Small") {
-    console.log(12);
+    pizzaCost += 12;
+    console.log(pizzaCost);
   } else {
     console.log(0);
   }
@@ -25,6 +29,9 @@ $(document).ready(function(){
     console.log(smallMediumLarge);
     console.log(pineappleBacon);
     var newPizza = new Pizza (pineappleBacon, smallMediumLarge);
-    newPizza.pizzaPrice();
+    var total = newPizza.pizzaPrice();
+    $("#totalCost").text("Your " + " pizza costs $" +  pizzaCost);
+    pizzaCost = 0;
+
   });
 });
