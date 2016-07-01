@@ -11,18 +11,17 @@
   <body>
     <h3>Order Pizza Here!</h3>
     <div class="container">
-      <label>Select a size:</label>
-      <form id="pizza-size">
-        <select class="form-control">
+
+      <form id="pizza-form">
+        <label>Select a size:</label>
+        <select class="form-control" id="pizza-size">
           <option>Small</option>
           <option>Medium</option>
           <option>Large</option>
         </select>
-      </form>
 
-      <label>Select a topping:</label>
-      <form id="pizza-toppings">
-        <select class="form-control">
+        <label>Select a topping:</label>
+        <select class="form-control" id="pizza-toppings">
           <option>Pepperoni</option>
           <option>Mushrooms</option>
           <option>Pineapple</option>
@@ -30,8 +29,9 @@
           <option>Bacon</option>
           <option>Anchovies</option>
         </select>
+
+        <button type="submit" class="btn btn-primary" id= "submit-button">Submit</button>
       </form>
-      <button type="submit" class="btn btn-primary" id= "submit-button">Submit</button>
     </div>
 
   </body>

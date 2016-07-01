@@ -8,5 +8,11 @@ var newPizza = new Pizza //inputToppings, inputSize//)
 Pizza.prototype.price = [];
 // User Interface Logic
 $(document).ready(function(){
-
+  $("#pizza-form").submit(function(event){
+    event.preventDefault();
+    var smallMediumLarge = $("#pizza-size").val();
+    var pineappleBacon = $("#pizza-toppings").val();
+    console.log(smallMediumLarge);
+    console.log(pineappleBacon);
+  });
 });
