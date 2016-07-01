@@ -4,18 +4,26 @@ body {
 
 .jumbotron {
   background-image: url("http://www.hotspotpizzeria.com/resources/css/background-image.jpg")
+
 }
 
-h1 {
+h1, #totalCost {
   text-align: center;
+  font-family:fantasy;
 }
 
 .move-label {
   margin-top:20px;
+  font-family:"Helvetica";
 }
 
 #pizza-size, #pizza-toppings1, #pizza-toppings2, #pizza-toppings3 {
   margin-top: 8px;
+}
+
+#pizza-image {
+  display: none;
+  text-align:center;
 }
 
 #submit-button {

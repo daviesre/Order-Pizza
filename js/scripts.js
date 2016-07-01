@@ -35,10 +35,9 @@ $(document).ready(function(){
     var topping2 = $("#pizza-toppings2").val();
     var topping3 = $("#pizza-toppings3").val();
     var newPizza = new Pizza (topping1, topping2, topping3, smallMediumLarge);
-    var total = newPizza.pizzaPrice();
+    newPizza.pizzaPrice();
     $("#totalCost").text("Your Order: One " + smallMediumLarge.toLowerCase() + " pizza totals to $" +  pizzaCost);
-
     pizzaCost = 0;
-
+    $("#pizza-image").show();
   });
 });
