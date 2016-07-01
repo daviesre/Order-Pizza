@@ -3,9 +3,19 @@ function Pizza (toppings, size) {
   this.toppings = toppings;
   this.pizzaSize = size;
 }
-//Need to collect inputs into newPizza, then create a prototype that gathers price based on choices
-var newPizza = new Pizza //inputToppings, inputSize//)
-Pizza.prototype.price = [];
+
+Pizza.prototype.pizzaPrice = function(price) {
+  if (this.pizzaSize === "Large") {
+    console.log(22)
+  } else if (this.pizzaSize === "Medium") {
+    console.log(16);
+  } else if (this.pizzaSize === "Small") {
+    console.log(12);
+  } else {
+    console.log(0);
+  }
+}
+
 // User Interface Logic
 $(document).ready(function(){
   $("#pizza-form").submit(function(event){
@@ -14,5 +24,7 @@ $(document).ready(function(){
     var pineappleBacon = $("#pizza-toppings").val();
     console.log(smallMediumLarge);
     console.log(pineappleBacon);
+    var newPizza = new Pizza (pineappleBacon, smallMediumLarge);
+    newPizza.pizzaPrice();
   });
 });
