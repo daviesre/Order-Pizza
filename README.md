@@ -9,4 +9,4 @@
 
 3. Should be able to display cost depending on selected preferences
   * Input: Medium, Pineapple
-  * Output: This will cost $15*
+  * Output: This will cost $15
