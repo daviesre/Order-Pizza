@@ -19,7 +19,7 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <img src="http://paesano.com.au/wp-content/uploads/2015/06/pizza2.jpg" alt="pizza">
+            <img src="http://paesano.com.au/wp-content/uploads/2015/06/pizza2.jpg" alt="pizza 1">
           </div>
 
           <div class="item">
@@ -27,7 +27,7 @@
           </div>
 
           <div class="item">
-            <img src="https://pizzaathome.files.wordpress.com/2011/06/dreamstime_12085194.jpg" alt="pizza">
+            <img src="https://pizzaathome.files.wordpress.com/2011/06/dreamstime_12085194.jpg" alt="pizza 2">
           </div>
         </div>
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -42,7 +42,7 @@
       <!-- jumbotron -->
       <div class="jumbotron">
         <h1>Welcome to Pizza Land!</h1>
-        <p>Online ordering now available<p>
+        <p>Online ordering now available</p>
       </div>
       <!-- select pizza size -->
       <div class="row">
@@ -50,10 +50,10 @@
           <form id="pizza-form">
             <label class="move-label">Select a size:</label>
             <ul class ="info-move">
-              <li>Small: $12.00</li>
-              <li>Medium: $16.00</li>
-              <li>Large: $20.00</li>
-              <li>Extra Large: $24.00</li>
+              <li>Small: <strong>$12.00</strong></li>
+              <li>Medium: <strong>$16.00</strong></li>
+              <li>Large: <strong>$20.00</strong></li>
+              <li>Extra Large: <strong>$24.00</strong></li>
             </ul>
             <select class="form-control" id="pizza-size">
               <option>Small</option>
@@ -65,7 +65,7 @@
             <!-- select pizza toppings -->
             <label class="move-label">Select up to 3 toppings:</label>
             <ul class ="info-move">
-              <li>Additional $1.00 per topping</li>
+              <li>Additional <strong>$1.00</strong> per topping</li>
               <li>Select no toppings for a plain cheese pizza at no additional charge!</li>
             </ul>
             <select class="form-control" id="pizza-toppings1">
@@ -104,6 +104,19 @@
               <option>Anchovies</option>
             </select>
 
+            <label class="move-label">Pick-Up or Delivery?</label>
+            <div class="radio pizza-move">
+              <label>
+                <input type="radio" name="delivery" value="delivery" checked>
+                Delivery ($2 Delivery Charge)
+              </label>
+            </div>
+            <div class="radio pizza-move">
+              <label>
+                <input type="radio" name="delivery" value="pick-up">
+                Pick-Up
+              </label>
+            </div>
             <!-- submit button -->
             <button type="submit" class="btn btn-danger btn-lg" id= "submit-button">ORDER NOW!</button>
 

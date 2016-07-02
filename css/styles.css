@@ -12,7 +12,6 @@ body {
 
 .info-move {
   margin-left:80px;
-
 }
 
 h1, #totalCost {
@@ -31,15 +30,21 @@ h1, #totalCost {
   font-family:"Helvetica";
 }
 
-#pizza-size, #pizza-toppings1, #pizza-toppings2, #pizza-toppings3 {
+#pizza-size, #pizza-toppings1, #pizza-toppings2, #pizza-toppings3, #delivery{
   margin-top: 8px;
   margin-left:100px;
-
 }
 
 #pizza-image {
   display: none;
   text-align:center;
+  margin-bottom: 50px;
+}
+
+
+.pizza-move {
+  margin-top:10px;
+  margin-left:100px;
 }
 
 #submit-button {
