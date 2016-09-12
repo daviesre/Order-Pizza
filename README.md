@@ -6,7 +6,7 @@
 
 ## Ordering Pizza
 
-This site is for ordering pizzas.
+This site allows the user to select pizza size, toppings, and delivery or pick-up. It will then calclulate the entire order based on predetermined prices
 
 ## Specs
 1. Should be able to select toppings for pizza
@@ -41,7 +41,7 @@ Javascript
 JQuery
 
 ## Links
-Click [here](https://daviesre.github.io/Order-Pizza/) to see the page
+Click [here](https://daviesre.github.io/order-pizza/) to see the page
 
 ### License
 
